@@ -1,4 +1,4 @@
-# giros-test — CEPs próximos
+# giross-test — CEPs próximos
 
 API REST em Node.js/TypeScript que recebe um CEP e devolve todos os CEPs num raio de 1km, cada um com a distância até o CEP de origem.
 
@@ -41,7 +41,7 @@ npm run dev
 ```
 PORT=3000
 MONGO_URI=mongodb://localhost:27017
-MONGO_DB_NAME=giros_test
+MONGO_DB_NAME=giross_test
 REDIS_URL=redis://localhost:6379
 ```
 

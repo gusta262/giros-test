@@ -1,7 +1,7 @@
 {
-  "name": "giros-test",
+  "name": "giross-test",
   "version": "1.0.0",
-  "description": "Projeto basico com Node.js, Express, MongoDB e Redis em TypeScript",
+  "description": "Projeto basico com Node.js, Express, MongoDB e Redis em TypeScript || teste para a Giross",
   "main": "dist/server.js",
   "scripts": {
     "build": "tsc",

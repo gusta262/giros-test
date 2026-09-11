@@ -23,7 +23,7 @@ export async function searchAddress({ street, city, state }: SearchAddressParams
       limit: 1,
     },
     headers: {
-      'User-Agent': 'giros-test-app/1.0',
+      'User-Agent': 'giross-test-app/1.0',
     },
   });
 
