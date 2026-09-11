@@ -121,4 +121,4 @@ Dois caches Redis, com TTLs diferentes:
 | Cache | Chave | TTL | Justificativa |
 |---|---|---|---|
 | Geocoding (CEP → lat/lng) | `cep:geocoding:<cep>` | 6 meses | Endereço e coordenadas de um CEP praticamente não mudam nesse intervalo — TTL bem longo reduz ao máximo as chamadas ao Nominatim (que tem rate limit), com risco desprezível de servir dado desatualizado. |
-| Busca por raio (CEP origem → lista de vizinhos) | `cep:search:nearby:<cep>` | 30 dias | A base geoespacial só muda por ação manual (`npm run seed`), não automaticamente — então um TTL curto não traria benefício de "frescor" por si só. Fica menor que o de geocoding porque é o cache mais fácil de invalidar manualmente (endpoint abaixo) e o mais afetado quando a base ganha novos CEPs. |
+| Busca por raio (CEP origem → lista de vizinhos) | `cep:search:nearby:<cep>` | 30 dias | A base geoespacial só muda por ação manual (`npm run seed`), não automaticamente — então um TTL curto não traria benefício de "frescor" por si só. Fica menor que o de geocoding porque é o cache mais fácil de invalidar manualmente o mais afetado quando a base ganha novos CEPs. |
